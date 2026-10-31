@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Layce's Fresh & Cripy Fish House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>🐟 Layce's Fish House 🐟</h2>
+      <nav class="buttons">
+        <button onclick="location.href = '#home'">Home</button>
+        <button onclick="location.href = '#menu'">Menu</button>
+        <button onclick="location.href = '#about'">About Us</button>
+        <button onclick="location.href = '#order'">Order Now</button>
+        <button onclick="location.href = '#contact'">Contact Us</button>
+      </nav>
+    </div>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="tagline">
+          FRESHLY PREPARED <span class="dot">.</span> FULL OF FLAVOUR
+        </p>
+
+        <h1>
+          <span class="white"> Welcome to Layce's <br /> </span>
+          <span class="orange"> Fresh &amp; Crispy Fish House. </span>
+        </h1>
+        <p class="description">
+          Hi, I'm Layce! Enjoy delicious fried tilapia and Nile perch, freshly
+          prepared with <br />
+          love. We offer both takeaway and delivery
+        </p>
+        <button onclick="location.href = '#menu'" class="black">
+          Explore our Menu
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="images/layce.png" alt="Freshly prepared tilapia on a plate" />
+      </div>
+      <br />
+    </section>
+
+    <section class="section" id="order">
+      <h3 class="david">ORDER YOUR MEAL</h3>
+      <p class="name">Place an Order</p>
+      <p class="mwita">Fill in your details to prepare your order.</p>
+
+      <form class="order-form">
+        <label for="name">Your full name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+
+        <label for="phone">Your phone number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          placeholder="e.g. 0708245411"
+        />
+
+        <label for="fish">Choose your fish</label>
+        <select id="fish" name="fish">
+          <option value="tilapia">Fried Tilapia</option>
+          <option value="perch">Fried Nile Perch</option>
+        </select>
+
+        <label for="qty">Quantity</label>
+        <input type="number" id="qty" name="qty" min="1" max="10" value="1" />
+
+        <label for="order-type">Order type</label>
+        <select id="order-type" name="order">
+          <option value="takeaway">Takeaway</option>
+          <option value="delivery">Delivery</option>
+        </select>
+
+        <label for="address"
+          >Delivery location or pickup details (if delivery)</label
+        >
+        <input
+          type="text"
+          id="address"
+          placeholder="Enter your location or pickup details"
+        />
+
+        <label for="instruction">Extra instructions(optional) </label>
+        <textarea
+          type="text"
+          placeholder="e.g. Include kachumbari"
+          id="instruction"
+          name="instruction"
+          rows="3"
+        ></textarea>
+        <p class="d">Delivery charges are not included.</p>
+      </form>
+    </section>
+    <section class="contact" id="contact">
+      <h4 class="g">GET IN TOUCH</h4>
+      <p class="l">Contact Layce</p>
+      <p class="h">
+        Have a question or want to order your favourite fish? Call us today!
+      </p>
+      <div class="container">
+        <h3 class="call">📞 Call Us</h3>
+        <a href="tel:0708245411" class="phone">0708245411</a><br />
+        <a href="tel:0755779445" class="phone">0755779445</a>
+        <h3 class="contact-name">🐟 Layce's Fish House</h3>
+        <h4 class="available">Takeaway and delivery available.</h4>
+      </div>
+    </section>
+    <footer>
+      <h3 class="fish">🐟 Layce's Fresh & Crispy Fish House</h3>
+      <p class="bites">
+        Fresh fish, crispy bites, happy customers.<br />Takeaway & Delivery
+        Available
+      </p>
+      <p class="bite">Call: 0708245411<br />Call: 0755779445</p>
+      <small>© 2026 Layce's Fish House. All rights reserved.</small>
+    </footer>
+  </body>
+</html>
